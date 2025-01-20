@@ -14,3 +14,4 @@ reportlab
 sentencepiece
 sacremoses
 langdetect
+chromadb
