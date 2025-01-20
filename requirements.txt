@@ -15,3 +15,4 @@ sentencepiece
 sacremoses
 langdetect
 chromadb
+pysqlite3-binary
