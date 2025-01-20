@@ -1,0 +1,16 @@
+streamlit
+crewai
+langchain
+openai
+PyPDF2
+pytesseract
+pdf2image
+transformers
+torch
+arabic-reshaper
+python-bidi
+python-docx
+reportlab
+sentencepiece
+sacremoses
+langdetect

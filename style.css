@@ -1,0 +1,51 @@
+/* Arabic font and RTL support */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+
+.rtl-text {
+    direction: rtl;
+    text-align: right;
+    font-family: 'Cairo', sans-serif;
+}
+
+/* Custom styling for the app */
+.stApp {
+    font-family: 'Cairo', sans-serif;
+}
+
+.stTextArea {
+    direction: rtl;
+}
+
+.stButton button {
+    font-family: 'Cairo', sans-serif;
+    direction: rtl;
+}
+
+.stTab {
+    font-family: 'Cairo', sans-serif;
+}
+
+/* Legal response formatting */
+.legal-response {
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0;
+    border-right: 4px solid #2e7d32;
+}
+
+.legal-reference {
+    color: #1976d2;
+    font-weight: bold;
+}
+
+/* Category badges */
+.category-badge {
+    background-color: #e3f2fd;
+    color: #1976d2;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.8em;
+    margin: 5px;
+    display: inline-block;
+}
