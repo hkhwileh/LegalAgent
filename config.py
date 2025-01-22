@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # OpenAI Configuration
-OPENAI_API_KEY = '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'
+OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
 
 # Language Settings
 DEFAULT_LANGUAGE = 'ar'  # Arabic by default

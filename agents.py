@@ -16,10 +16,28 @@ if not os.getenv('OPENAI_API_KEY'):
 BASE_LLM_CONFIG = {
     "config_list": [
         {
-            "model": "gpt-4",
+            "model": "gpt-4-1106-preview",  # Using the latest GPT-4 Turbo model
             "api_key": os.getenv('OPENAI_API_KEY'),
-            "temperature": 0.7,
-            "max_tokens": 4000
+            "temperature": 0.3,  # Lower temperature for more consistent outputs
+            "max_tokens": 4000,
+            "presence_penalty": 0.0,
+            "frequency_penalty": 0.0,
+            "response_format": {"type": "text"}
+        }
+    ]
+}
+
+# Configuration for summarization tasks
+SUMMARY_LLM_CONFIG = {
+    "config_list": [
+        {
+            "model": "gpt-4-1106-preview",
+            "api_key": os.getenv('OPENAI_API_KEY'),
+            "temperature": 0.2,  # Even lower temperature for summaries
+            "max_tokens": 4000,
+            "presence_penalty": 0.0,
+            "frequency_penalty": 0.3,  # Reduce repetition in summaries
+            "response_format": {"type": "text"}
         }
     ]
 }
