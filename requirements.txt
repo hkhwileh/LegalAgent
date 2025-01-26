@@ -1,18 +1,27 @@
-streamlit
-crewai
-langchain
-openai
-PyPDF2
+# Core app dependencies
+streamlit>=1.20.0
+fastapi>=0.100.0,<1.0.0
+langchain>=0.94.0,<0.95.0
+openai>=0.27.0
+chromadb==0.4.24
+
+# PDF and OCR processing
+PyPDF2>=3.0.0
 pytesseract
 pdf2image
-transformers
-torch
-arabic-reshaper
-python-bidi
-python-docx
 reportlab
+
+# NLP and Transformers
+transformers>=4.30.0,<5.0.0
+torch>=2.0.0,<3.0.0
 sentencepiece
 sacremoses
 langdetect
-chromadb
-pysqlite3-binary
+
+# Arabic text handling
+arabic-reshaper
+python-bidi
+python-docx
+
+# SQLite utilities
+sqlite-utils
